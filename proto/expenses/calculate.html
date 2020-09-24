@@ -9,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-    <title>Calculate your expenses and percentage of use - Employees with home workspace expenses – Canada.ca</title>
+    <title>Calculate your expenses and percentage of use - Employment use of a work space in the home – Canada.ca</title>
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name=”robots” content=”noindex, follow”>
     <!-- Meta data -->
@@ -239,7 +239,7 @@
                 title: "Line 22900 - Other employment expenses",
                 href: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-229-other-employment-expenses.html"
             }, {
-                title: "Employees with home workspace expenses",
+                title: "Employment use of a work space in the home",
                 href: "index.html"
             }],
             search: true,
@@ -249,7 +249,7 @@
     </script>
     <main role="main" property="mainContentOfPage" class="container">
         <section class="gc-nav">
-            <h1 property="name" id="wb-cont-nav">Employees with home workspace expenses</h1>
+            <h1 property="name" id="wb-cont-nav">Employment use of a work space in the home</h1>
             <ul id="gc-navseq-nav" class="hidden-xs hidden-sm">
                 <li> <a class="gc-navseq-nav-btn" href="#gc-navseq-header">Go to navigation menu</a> </li>
                 <li> <a class="gc-navseq-nav-btn" href="#wb-cont">Skip to main content</a> </li>
@@ -278,24 +278,20 @@
                 <div class="col-xs-12">
                     <div class="brdr-lft mrgn-lft-md mrgn-tp-sm">
                         <div class="pstn-lft-xs pstn-tp-xs"><span class="fa-stack fa-fw mrgn-lft-sm text-info"> <span
-                                    class="fas fa-square fa-stack-2x fa-inverse"></span> <span class="fas fa-calculator fa-stack-2x"></span></span>
+                  class="fas fa-square fa-stack-2x fa-inverse"></span> <span class="fas fa-calculator fa-stack-2x"></span></span>
                         </div>
-                        <h3 class="pull-left mrgn-tp-0 mrgn-lft-lg h3 text-info" id="confirm-registration">Use the calculator
-                        </h3>
+                        <h2 class="pull-left mrgn-tp-0 mrgn-lft-lg h3 text-info" id="confirm-registration">Use the calculator</h2>
 
                         <div class="clearfix"></div>
 
                         <div class="mrgn-lft-lg">
-                            <p><strong>Reminder:</strong> You must meet the <a href="who-apply.html#h-1">eligibility
-                                    criteria</a> to claim your expenses.</p>
+                            <p><strong>Reminder:</strong> You must meet the <a href="who-apply.html#h-1">eligibility criteria</a> to claim your expenses.</p>
                             <div class="wb-frmvld fieldflow-lg">
                                 <form>
                                     <div class="wb-fieldflow " data-wb-fieldflow='{"renderas": "radio", "noForm": true, "isoptional": true, "reset": {"action": "addClass", "source": "#designated-room", "class": "hidden"}}'>
                                         <div class="wb-fieldflow-header">
-                                            <p class="wb-fieldflow-label">Did you earn commision income (Box 42 on T4 slip)?
-                                            </p>
-                                            <p><a href="#commissions-lbx" class="wb-lbx">What is commission
-                                                    income&nbsp;<span class="far fa-question-circle"></span></a></p>
+                                            <p class="wb-fieldflow-label">Did you earn commision income (Box 42 on T4 slip)?</p>
+
                                         </div>
                                         <ul>
                                             <li data-wb-fieldflow='[{"action": "removeClass", "source": ".cmmssn-only", "class": "hidden", "live": true}, {"action": "append", "source": "#rooms", "renderas": "radio"}]'>
@@ -316,7 +312,7 @@
                     <p class="wb-fieldflow-label">What type of area do you work from at home?
                     </p>
                     <p><a href="#rooms-lbx" class="wb-lbx">Difference between a designated room and a common
-                            space&nbsp;<span class="far fa-question-circle"></span></a></p>
+                      space&nbsp;<span class="far fa-question-circle"></span></a></p>
                 </div>
                 <ul>
                     <li data-wb-fieldflow='[{"action": "addClass", "source": "#designated-room, .cmmnrm", "class": "hidden", "live": true}, {"action": "removeClass", "source": ".dsgntdrm", "class": "hidden", "live": true}, {"action": "append", "source": "#measurements", "renderas": "radio"}]'>
@@ -343,14 +339,15 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="work-home-start" class="control-label">Start of work at home</label>
-                                    <input class="form-control" id="work-home-start" name="work-home-start" type="date" />
+                                    <label for="work-home-start" class="control-label required"><span class="field-name">Start of work at home</span> <strong class="required">(required)</strong>
+</label>
+                                    <input class="form-control" id="work-home-start" name="work-home-start" type="date" required="required" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="work-home-start" class="control-label">End of work at home</label>
-                                    <input class="form-control" id="work-home-end" name="work-home-end" type="date" />
+                                    <label for="work-home-start" class="control-label required"><span class="field-name">End of work at home</span> <strong class="required">(required)</strong></label>
+                                    <input class="form-control" id="work-home-end" name="work-home-end" type="date" required="required" />
                                 </div>
                             </div>
                         </div>
@@ -359,39 +356,36 @@
                         <legend class="brdr-tp">Size of work space and home</legend>
                         <div>
                             <div class="form-group dsgntdrm">
-                                <label for="wrkspc">Designated work space in your home<span class="wb-inv"> in square
-                                        <span class="exp-m-sq hidden">meters</span><span
-                                            class="exp-ft-sq hidden">feet</span></span></label>
+                                <label for="wrkspc" class="required"><span class="field-name">Designated work space in your home</span><span class="wb-inv"> in square <span
+                              class="exp-m-sq hidden">meters</span><span
+                              class="exp-ft-sq hidden">feet</span></span> <strong class="required">(required)</strong>
+</label>
                                 <div class="input-group col-sm-5 col-md-4">
-                                    <input class="form-control input-lg" id="wrkspc" name="wrkspc" type="number">
+                                    <input class="form-control input-lg" id="wrkspc" name="wrkspc" type="number" required="required">
                                     <span class="input-group-addon exp-m-sq hidden">m&#178;</span><span class="input-group-addon exp-ft-sq hidden">ft&#178;</span> </div>
                             </div>
                             <div class="cmmnrm hidden">
                                 <div class="form-group">
-                                    <label for="wrkspc-cmmn">Common space <span class="wb-inv"> in square <span
-                                                class="exp-m-sq hidden">meters</span><span
-                                                class="exp-ft-sq hidden">feet</span></span></label>
+                                    <label for="wrkspc-cmmn" class="required"><span class="field-name">Common space in your home</span><span class="wb-inv"> in square <span class="exp-m-sq hidden">meters</span><span class="exp-ft-sq hidden">feet</span></span><strong class="required">(required)</strong></label>
                                     <div class="input-group col-sm-5 col-md-4">
-                                        <input class="form-control input-lg" id="wrkspc-cmmn" name="wrkspc-cmmn" type="number">
+                                        <input class="form-control input-lg" id="wrkspc-cmmn" name="wrkspc-cmmn" type="number" required="required">
                                         <span class="input-group-addon exp-m-sq hidden">m&#178;</span><span class="input-group-addon exp-ft-sq hidden">ft&#178;</span> </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="cmmnrm-hrs">Hours a week you worked in the common space</label>
+                                    <label for="cmmnrm-hrs" class="required"><span class="field-name">Hours a week you worked in the common space</span> <strong class="required">(required)</strong></label>
                                     <div class="input-group col-sm-5 col-md-4">
-                                        <input class="form-control input-lg" id="cmmnrm-hrs" name="cmmnrm-hrs" type="number">
+                                        <input class="form-control input-lg" id="cmmnrm-hrs" name="cmmnrm-hrs" type="number" required="required">
                                         <span class="input-group-addon"><span class="far fa-clock fa-lg"></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group mrgn-tp-md">
-                                <label for="hmspc">Total finished area of your home<span class="wb-inv"> in square <span
-                                            class="exp-m-sq hidden">meters</span><span
-                                            class="exp-ft-sq hidden">feet</span></span></label>
-                                <p id="finished-def"><a href="#finished-area" class="wb-lbx">What is included in the
-                                        total
-                                        finished area&nbsp;<span class="far fa-question-circle"></span></a></p>
+                                <label for="hmspc" class="required"><span class="field-name">Total finished area of your home</span><span class="wb-inv"> in square <span
+                              class="exp-m-sq hidden">meters</span><span class="exp-ft-sq hidden">feet</span></span><strong class="required">(required)</strong></label>
+                                <p id="finished-def"><a href="#finished-area" class="wb-lbx">What is included in the total
+                            finished area&nbsp;<span class="far fa-question-circle"></span></a></p>
                                 <div class="input-group col-sm-5 col-md-4">
-                                    <input class="form-control input-lg" id="hmspc" name="hmspc" type="number" aria-describedby="finished-def">
+                                    <input class="form-control input-lg" id="hmspc" name="hmspc" type="number" aria-describedby="finished-def" required="required">
                                     <span class="input-group-addon exp-m-sq hidden">m&#178;</span><span class="input-group-addon exp-ft-sq hidden">ft&#178;</span> </div>
                             </div>
 
@@ -401,22 +395,17 @@
                                     <!--<li class="rmbth hidden"><span class="h4"><span class="ded-wrkspc-sum">0</span> <span class="exp-m-sq hidden">square meters</span><span class="exp-ft-sq hidden">square
       feet</span></span> of dedicated work space </li>//-->
                                     <li><span class="h4"><span class="cmn-wrkspc-sum">0</span> <span class="exp-m-sq hidden">square meters</span><span class="exp-ft-sq hidden">square feet</span></span> of <span class="dsgntdrm hidden">designated </span>
-                                        <span class="cmmnrm hidden">common
-                                            </span>work space </li>
-                                    <li class="brdr-bttm"><span class="fas fa-divide fa-li"><span class="wb-inv">divided
-                                                by </span></span> <span class="h4"><span class="hmspc-sum">0</span>
-                                        <span class="exp-m-sq hidden">square meters</span><span class="exp-ft-sq hidden">square
-                                                feet</span></span> of total finished area</li>
-                                    <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals </span></span>
-                                        <span class="h4"><span class="wrkspc-percent-sum">0</span>%</span> of your home used for work space </li>
-                                    <li class="cmmnrm hidden brdr-bttm"><span class="fas fa-times fa-li"><span
-                                                class="wb-inv">multiplied by </span></span> <span class="h4"><span
-                                                class="wrkhr-percent-sum">0</span>%</span> of hours of employment use in common space (<span id="wrk-cmmn-rm-sum">0</span> hours divided into 168 total hours a week) </li>
-                                    <li class="cmmnrm hidden"><span class="fas fa-equals fa-li"><span
-                                                class="wb-inv">equals </span></span> <span class="h4"><span
-                                                class="wrkspc-percent-sum-alt" id="wrk">0</span>%</span> of your home used for work space and employment purposes
-                                        <p class="mrgn-tp-md">Therefore, <span class="h4 badge mrgn-tp-0"><span
-                                                    class="perspc-percent-sum-alt" id="perRate"> 0</span>%</span> of your home is used for personal space and non-employment purposes which will calculate your personal-use portion. </p>
+                                        <span class="cmmnrm hidden">common </span>work space </li>
+                                    <li class="brdr-bttm"><span class="fas fa-divide fa-li"><span class="wb-inv">divided by </span></span> <span class="h4"><span class="hmspc-sum">0</span> <span class="exp-m-sq hidden">square meters</span><span class="exp-ft-sq hidden">square
+      feet</span></span> of total finished area</li>
+                                    <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals </span></span> <span class="h4"><span class="wrkspc-percent-sum">0</span>%</span> of your home used for work space
+                                        <p class="mrgn-tp-md">Therefore, <span class="h4 badge mrgn-tp-0"><span class="perspc-percent-sum">0</span>%</span> of your home is used for personal space and non-employment purposes which will calculate your personal-use portion. </p>
+                                    </li>
+                                    <li class="cmmnrm hidden brdr-bttm"><span class="fas fa-times fa-li"><span class="wb-inv">multiplied by </span></span> <span class="h4"><span class="wrkhr-percent-sum">0</span>%</span> of hours of employment use in common space (<span id="wrk-cmmn-rm-sum">0</span>                                        hours divided into 168 total hours a week) </li>
+                                    <li class="cmmnrm hidden"><span class="fas fa-equals fa-li"><span class="wb-inv">equals </span></span> <span class="h4"><span class="wrkspc-percent-sum-alt" id="workRate">0</span>%</span> of your home used for work space and employment purposes
+                                        <p class="mrgn-tp-md">Therefore, <span class="h4 badge mrgn-tp-0"><span class="perspc-percent-sum-alt" id="perRate">0</span>%</span> of your home is used for personal space and non-employment purposes which will calculate your personal-use
+                                            portion.
+                                        </p>
                                     </li>
                                 </ul>
                             </div>
@@ -424,60 +413,58 @@
 
                     <fieldset>
                         <legend class="mrgn-bttm-0">Expenses to claim</legend>
-                        <p>Determine your expenses to the beginning and end of your work period.</p>
+                        <p>Determine your expenses to the beginning and end of your work period. Enter $0 if you are not claiming the expense.</p>
 
 
                         <div class="form-group">
-                            <label for="mntnc">Maintenance <br><span class="text-muted">on home including work
-                                    space<span class="wb-inv"> in dollars and cents</span></span></label>
+                            <label for="mntnc" class="required"><span class="field-name">Maintenance <br><span class="text-muted">on home including work space</span><span class="wb-inv"> in dollars and cents</span></span> <strong class="required">(required)</strong></label>
                             <div class="input-group col-sm-5 col-md-4"> <span class="input-group-addon">$</span>
-                                <input class="form-control input-lg currency" id="mntnc" name="mntnc" type="text">
+                                <input class="form-control input-lg currency" id="mntnc" name="mntnc" type="text" required="required">
                             </div>
                         </div>
                         <div class="form-group dsgntdrm">
-                            <label for="mntnc-excl">Maintenance <br><span class="text-muted">on work space only<span
-                                        class="wb-inv"> in dollars and cents</span></span></label>
+                            <label for="mntnc-excl" class="required"><span class="field-name">Maintenance <br><span class="text-muted">on work space only</span> <span class="wb-inv"> in dollars and cents</span></span> <strong class="required">(required)</strong></label>
                             <div class="input-group col-sm-5 col-md-4"> <span class="input-group-addon">$</span>
-                                <input class="form-control input-lg currency" id="mntnc-excl" name="mntnc-excl" type="text">
+                                <input class="form-control input-lg currency" id="mntnc-excl" name="mntnc-excl" type="text" required="required">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="othrex">Other expenses (e.g. rent)<span class="wb-inv"> in dollars and
-                                    cents</span></label>
+                            <label for="othrex" class="required"><span class="field-name">Other expenses (e.g. rent)</span><span class="wb-inv"> in dollars and
+                                cents</span> <strong class="required">(required)</strong></label>
                             <div class="input-group col-sm-5 col-md-4"> <span class="input-group-addon">$</span>
-                                <input class="form-control input-lg currency" id="othrex" name="othrex" type="text">
+                                <input class="form-control input-lg currency" id="othrex" name="othrex" type="text" required="required">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="utlts">Electricity, heat and water<span class="wb-inv"> in dollars and
-                                    cents</span></label>
+                            <label for="utlts" class="required"><span class="field-name">Electricity, heat and water</span><span class="wb-inv"> in dollars and
+                                cents</span> <strong class="required">(required)</strong></label>
                             <div class="input-group col-sm-5 col-md-4"> <span class="input-group-addon">$</span>
-                                <input class="form-control input-lg currency" id="utlts" name="utlts" type="text">
+                                <input class="form-control input-lg currency" id="utlts" name="utlts" type="text" required="required">
                             </div>
                         </div>
 
                         <div class="form-group cmmssn-only hidden">
-                            <label for="insrnc">Insurance<span class="wb-inv"> in dollars and cents</span></label>
+                            <label for="insrnc" class="required"><span class="field-name">Insurance</span><span class="wb-inv"> in dollars and cents</span> <strong class="required">(required)</strong></label>
                             <div class="input-group col-sm-5 col-md-4"> <span class="input-group-addon">$</span>
-                                <input class="form-control input-lg currency" id="insrnc" name="insrnc" type="text">
+                                <input class="form-control input-lg currency" id="insrnc" name="insrnc" type="text" required="required">
                             </div>
                         </div>
                         <div class="form-group cmmssn-only hidden">
-                            <label for="prprt">Property taxes<span class="wb-inv"> in dollars and cents</span></label>
+                            <label for="prprt" class="required"><span class="field-name">Property taxes</span><span class="wb-inv"> in dollars and cents</span> <strong class="required">(required)</strong></label>
                             <div class="input-group col-sm-5 col-md-4"> <span class="input-group-addon">$</span>
-                                <input class="form-control input-lg currency" id="prprt" name="prprt" type="text">
+                                <input class="form-control input-lg currency" id="prprt" name="prprt" type="text" required="required">
                             </div>
                         </div>
                     </fieldset>
 
 
                     <p>
-                        <button class="btn btn-call-to-action btn-lg mrgn-bttm-lg mrgn-tp-lg" id="exp-cal" type="button">Calculate
-                            your
-                            expenses</button>
+                        <button class="btn btn-call-to-action btn-lg mrgn-bttm-lg mrgn-tp-lg" id="exp-cal" type="submit">Calculate your
+                        expenses</button>
                     </p>
                 </form>
-                <div class="panel panel-primary">
+
+                <div class="panel panel-primary hidden" id="results">
                     <div class="panel-heading">
                         <h4 class="panel-title">Your employee home work space expenses results</h4>
                     </div>
@@ -526,8 +513,8 @@ Expenses breakdown
                             <tr>
                                 <th scope="col">Expense</th>
                                 <th scope="col" class="active">Amount to claim</th>
-                                <th scope="col">T777c (short) form</th>
-                                <th scope="col">T777 form</th>
+                                <!--   <th scope="col">T777c (short) form</th>
+                        <th scope="col">T777 form</th> //-->
                             </tr>
                         </thead>
                         <tbody>
@@ -535,42 +522,48 @@ Expenses breakdown
                             <tr>
                                 <td>Electricity, heat and water </td>
                                 <td class="active" id="electricity">[$0.00]</td>
-                                <td>Line 5</td>
-                                <td>Line 17</td>
+                                <!--   <td>Line 5</td>
+                        <td>Line 17</td>//-->
                             </tr>
                             <tr>
                                 <td>Maintenance (home + work spaces) </td>
                                 <td class="active" id="maintenance">[$0.00]</td>
-                                <td>Line 6</td>
-                                <td>Line 18</td>
+                                <!--  <td>Line 6</td>
+                        <td>Line 18</td>//-->
+                            </tr>
+                            <tr class="dsgntdrm">
+                                <td>Maintenance (work space only) </td>
+                                <td class="active" id="maintenance-alt">[$0.00]</td>
+                                <!--  <td></td>
+                        <td></td>//-->
                             </tr>
                             <tr>
                                 <td>Other expenses</td>
                                 <td class="active" id="other">[$0.00]</td>
-                                <td>Line 9</td>
-                                <td>Field 8810</td>
+                                <!--    <td>Line 9</td>
+                        <td>Field 8810</td>//-->
                             </tr>
 
                             <tr class="cmmssn-only hidden">
                                 <td>Insurance amount <small>(commission employees only)</br>
-                                    </small></td>
+                          </small></td>
                                 <td class="active" id="insurance">[$0.00]</td>
-                                <td>Line 7</td>
-                                <td>Line 19</td>
+                                <!--   <td>Line 7</td>
+                        <td>Line 19</td>//-->
                             </tr>
                             <tr class="cmmssn-only hidden">
                                 <td>Property taxes</br>
                                     <small>(commission employees only)</br>
-                                    </small></td>
+                          </small></td>
                                 <td class="active" id="property">[$0.00]</td>
-                                <td>Line 8</td>
-                                <td>Line 20</td>
+                                <!--     <td>Line 8</td>
+                        <td>Line 20</td>//-->
                             </tr>
                             <tr>
-                                <td>Personal-use portion</td>
+                                <td>Personal-use portion (<span class="wrkspc-percent-sum">0</span>% of your total finished area)</td>
                                 <td class="active" id="office">[$0.00]</td>
-                                <td>Line 11</td>
-                                <td>Line 23</td>
+                                <!--    <td>Line 11</td>
+                        <td>Line 23</td>//-->
                             </tr>
                         </tbody>
                     </table>
@@ -588,11 +581,9 @@ Expenses breakdown
                                 <p>The employment portion of</p>
                                 <ul class="fa-ul list-unstyled lst-spcd">
                                     <li><span class="h4">$<span class="ins">0.00</span></span> insurance amount</li>
-                                    <li class="brdr-bttm"><span class="fas fa-plus fa-li"><span class="wb-inv">plus
-                                            </span></span> <span class="h4">$<span class="pro">0.00</span></span> property taxes
-                                    </li>
-                                    <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals </span></span>
-                                        <span class="h4">$<span class="com">0.00</span></span> of commission only expenses that cannot exceed the amount of commissions you earned for the period
+                                    <li class="brdr-bttm"><span class="fas fa-plus fa-li"><span class="wb-inv">plus </span></span> <span class="h4">$<span class="pro">0.00</span></span> property taxes</li>
+                                    <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals </span></span> <span class="h4">$<span class="com-total">0.00</span></span> of commission only expenses that cannot exceed the amount of commissions you
+                                        earned for the period
                                 </ul>
                             </div>
 
@@ -605,25 +596,23 @@ Expenses breakdown
                         <tbody>
                             <tr>
                                 <th scope="row">Size of work spaces in your home</th>
-                                <td class="text-right nowrap"><output class="h3 wb-calc nowrap wb-init wb-calc-inited" for="p4-tws" data-wb-calc="{&quot;expr&quot;: &quot;#p4-tws * 1&quot;, &quot;format&quot;: &quot;currency&quot;}" id="wb-auto-56">[answer]</output></td>
+                                <td class="text-right nowrap"><span id="workSize">[answer]</span><span class="hidden exp-m-sq">m²</span><span class="hidden exp-ft-sq">ft²</span></td>
                             </tr>
                             <tr class="cmmnrm hidden">
                                 <th scope="row">Hours a week in work space</th>
-                                <td class="text-right nowrap"><output class="h3 wb-calc nowrap wb-init wb-calc-inited" for="p4-wsb" data-wb-calc="{&quot;expr&quot;: &quot;#p4-wsb * 1&quot;, &quot;format&quot;: &quot;currency&quot;}" id="wb-auto-57">[answer]</output></td>
+                                <td class="text-right nowrap"><span id="hoursWorked">[answer]</span></td>
                             </tr>
                             <tr>
                                 <th scope="row">Total finished area of your home</th>
-                                <td class="text-right nowrap"><output class="h3 wb-calc nowrap wb-init wb-calc-inited" for="p4-wsb" data-wb-calc="{&quot;expr&quot;: &quot;#p4-wsb * 1&quot;, &quot;format&quot;: &quot;currency&quot;}" id="wb-auto-58">[answer]</output></td>
+                                <td class="text-right nowrap"><span id="homeSize">[answer]</span><span class="hidden exp-m-sq">m²</span><span class="hidden exp-ft-sq">ft²</span></td>
                             </tr>
 
                         </tbody>
                     </table>
                     <div class="panel-body">
                         <p>You are now ready to <strong>print these amounts</strong> so you can enter them into the form. The data is not saved on this page. If you leave this page without printing you will need to enter your information again.</p>
-                        <p class="hidden-print"><a class="wb-lbx btn btn-default btn-lg wb-init wb-lbx-inited" id="wb-auto-62" role="button" href="#pp-statement"><span class="h3"><span
-                                        class="glyphicon glyphicon-print"></span> Print preview<span class="wb-inv">
-                                        CEWS
-                                        statement</span></span></a></p>
+                        <p class="hidden-print"><a class="wb-lbx btn btn-default btn-lg wb-init wb-lbx-inited" id="wb-auto-62" role="button" href="#pp-statement"><span class="h3"><span class="glyphicon glyphicon-print"></span> Print preview<span class="wb-inv"> CEWS
+		statement</span></span></a></p>
 
                     </div>
                 </div>
@@ -632,14 +621,6 @@ Expenses breakdown
 
 
                 <!--Overlays //-->
-                <section id="commissions-lbx" class="mfp-hide modal-dialog modal-content overlay-def">
-                    <header class="modal-header">
-                        <h2 class="modal-title">Commissions</h2>
-                    </header>
-                    <div class="modal-body">
-                        <p>text here</p>
-                    </div>
-                </section>
                 <section id="rooms-lbx" class="mfp-hide modal-dialog modal-content overlay-def">
                     <header class="modal-header">
                         <h2 class="modal-title">Designated room or common area</h2>
@@ -723,9 +704,9 @@ Expenses breakdown
             currency: "CAD",
             minimumFractionDigits: 2
         });
-        var typingTimer; //timer identifier
-        var doneTypingInterval = 1500; //time in ms 
         const NON_CURRENCY_CHARACTER = /[a-zA-Z\+\-~<>?\/":;'\[\{\]\}\\|!@#$%^&*()_=]/g;
+        const FRENCH_CURRENCY_FORMAT = /^(\d{1,3}(\s\d{3})*|(\d+))(\,\d{2})?$/gm;
+        const ENGLISH_CURRENCY_FORMAT = /^(\d{1,3}(\,\d{3})*|(\d+))(\.\d{2})?$/gm;
         /**
          * calculateCommonRoomClaimRate
          * 
@@ -750,39 +731,17 @@ Expenses breakdown
          * reformat the currency values after a short delay
          */
         $(document).on("blur", ".currency", reformatNumber);
-        $(document).on('input', ".currency", function(event) {
-            clearTimeout(typingTimer);
-            if (event.target.value) {
-                typingTimer = setTimeout(reformatNumber, doneTypingInterval, event);
-            }
-        });
 
         function reformatNumber(event) {
+            if (event.target.value == "") {
+                return;
+            }
             if (event.target.value.match(NON_CURRENCY_CHARACTER)) {
                 event.target.value = event.target.value.replace(NON_CURRENCY_CHARACTER, "");
             }
-            event.target.value = toUnformattedNumber(event.target.value);
+            event.target.value = toFloat(event.target.value);
             event.target.value = toMoney.format(event.target.value)
                 .replace("$", "");
-        }
-
-        /**
-         * toUnformattedNumber
-         *
-         * remove language based formatting
-         *
-         * @param {String} formattedNumber the formatted number
-         *
-         * @return {String} the unformatted number
-         */
-        function toUnformattedNumber(formattedNumber) {
-            if (document.documentElement.lang == "fr") {
-                formattedNumber = formattedNumber.replace(/,/g, ".");
-                formattedNumber = formattedNumber.replace(/\s/g, "");
-            } else {
-                formattedNumber = formattedNumber.replace(/,/g, "");
-            }
-            return formattedNumber;
         }
 
         /**
@@ -867,7 +826,7 @@ Expenses breakdown
             }
             //calculate the total area used as a percentage of the total finished area
             var workArea = getCommonWorkSpace() + getDesignatedWorkSpace();
-            var spaceUsed = calculateSpaceUsed(workArea, totalArea);
+            var spaceUsed = calculateSpaceUsed(workArea, totalArea).toFixed(1);
             //update display
             if (!isNaN(spaceUsed)) {
                 $(".perspc-percent-sum").text(100 - spaceUsed);
@@ -876,7 +835,7 @@ Expenses breakdown
                 $(".wrkspc-percent-sum").text("0");
                 $(".perspc-percent-sum").text("0");
             }
-            var claimRate = calculateCommonRoomClaimRate(spaceUsed, getCommonWorkSpaceHours().percentage);
+            var claimRate = calculateCommonRoomClaimRate(spaceUsed, getCommonWorkSpaceHours().percentage).toFixed(1);
             $(".perspc-percent-sum-alt").text(100 - claimRate);
             $(".wrkspc-percent-sum-alt").text(claimRate);
         });
@@ -893,7 +852,7 @@ Expenses breakdown
             var claimRate = calculateCommonRoomClaimRate(
                 calculateSpaceUsed(workArea, $("#hmspc").val()),
                 getCommonWorkSpaceHours().percentage
-            );
+            ).toFixed(1);
             $(".perspc-percent-sum-alt").text(100 - claimRate);
             $(".wrkspc-percent-sum-alt").text(claimRate);
         });
@@ -913,7 +872,7 @@ Expenses breakdown
             var hours = getCommonWorkSpaceHours();
             if (!isNaN(hours.percentage) && !isNaN(hours.rawHours)) {
                 $(".perhr-percent-sum").text(100 - hours.percentage);
-                $(".wrkhr-percent-sum").text(hours.percentage);
+                $(".wrkhr-percent-sum").text(hours.percentage.toFixed(1));
                 $("#wrk-cmmn-rm-sum").text(hours.rawHours);
                 $("#per-cmmn-rm-sum").text(168 - hours.rawHours);
             } else {
@@ -926,28 +885,68 @@ Expenses breakdown
             var claimRate = calculateCommonRoomClaimRate(
                 calculateSpaceUsed(workArea, $("#hmspc").val()),
                 hours.percentage
-            );
+            ).toFixed(1);
             $(".perspc-percent-sum-alt").text(100 - claimRate);
             $(".wrkspc-percent-sum-alt").text(claimRate);
         });
 
+        //when the commission or work space type radios are changed. using this method of selecting because fieldflow does not give us ID's to work with
+        $(document).on("click", "input[type='radio']:first, input[type='radio']:eq(1), input[type='radio']:eq(2), input[type='radio']:eq(3)", function(event) {
+            $("input[type='text'], input[type='number']").each(function(i, element) {
+                $(element).val("");
+                $(element).trigger("change");
+            });
+            $("#results").addClass("hidden");
+        });
+
         //submit button was clicked
         $(document).on("click", "#exp-cal", function(event) {
+            event.preventDefault();
+            //remove the required attribute in all hidden elements
+            $("[required]:hidden").each(function(i, element) {
+                $(element).removeAttr("required");
+            });
+            var count = 0,
+                $elms = $(".wb-frmvld select[required], .wb-frmvld input[required]"),
+                $emptyElms = [];
+            //find all required fields that were left empty
+            for (let i = 0; i < $($elms).length; i++) {
+                var $elm = $($elms).eq(i);
+                if ($elm.val() == "") {
+                    $emptyElms.push($elm);
+                    count++;
+                }
+            }
+            //if WET4 already has errors, scroll to those
+            if ($("#errors-default")[0]) {
+                $('html, body').animate({
+                    scrollTop: $("#errors-default").offset().top
+                }, 'slow');
+                //scroll to the FIRST element that failed custom validation
+            } else if ($emptyElms[0]) {
+                $('html, body').animate({
+                    scrollTop: $($emptyElms[0]).offset().top
+                }, 'slow');
+                console.debug($emptyElms);
+                //validation passed, show the results
+            } else {
+                $("#results").removeClass("hidden");
+            }
             var workArea = getCommonWorkSpace() + getDesignatedWorkSpace();
 
             //designated Room
-            if (document.getElementById("wb-auto-23").checked == true) {
+            if ($(".cmmnrm").hasClass("hidden")) {
                 var fromDate = $("#work-home-start").val();
                 var toDate = $("#work-home-end").val();
 
                 //Start Date
                 if (fromDate) {
-                    document.getElementById('startDate').innerHTML = $("#work-home-start").val();
+                    $("#startDate").text(fromDate);
                 }
 
                 //End Date
                 if (toDate) {
-                    document.getElementById('endDate').innerHTML = $("#work-home-end").val();
+                    $("#endDate").text(toDate);
                 }
 
                 var TotalArea = $("#hmspc").val();
@@ -955,177 +954,213 @@ Expenses breakdown
                 var rate = calculateSpaceUsed(workArea, TotalArea);
 
                 //Bills
-                var maintenanceBill = $("#mntnc").val();
-                var otherMaintenanceBill = $("#mntnc-excl").val();
-                var otherExpensesBill = $("#othrex").val();
-                var electricityBill = $("#utlts").val();
-                var insuranceBill = $("#insrnc").val();
-                var propertyTaxesBill = $("#prprt").val();
+                var maintenanceBill = toFloat($("#mntnc").val());
+                var otherMaintenanceBill = toFloat($("#mntnc-excl").val());
+                var otherExpensesBill = toFloat($("#othrex").val());
+                var electricityBill = toFloat($("#utlts").val());
+                var insuranceBill = toFloat($("#insrnc").val());
+                var propertyTaxesBill = toFloat($("#prprt").val());
 
                 //Rebates
-                var maintenanceRebate = (rate / 100) * maintenanceBill;
-                var otherExpensesRebate = (rate / 100) * otherExpensesBill;
-                var electricityRebate = (rate / 100) * electricityBill;
-                var insuranceRebate = (rate / 100) * insuranceBill;
-                var propertyRebate = (rate / 100) * propertyTaxesBill;
-                var otherMaintenanceRebate = (rate / 100) * otherMaintenanceBill;
-                var maintenanceRebates = maintenanceRebate + otherMaintenanceRebate;
+                var maintenanceRebate = toMoney.format(maintenanceBill);
+                var otherMaintenanceRebate = toMoney.format(otherMaintenanceBill);
+                var otherExpensesRebate = toMoney.format(otherExpensesBill);
+                var electricityRebate = toMoney.format(electricityBill);
+
+                var insuranceRebate = toMoney.format(insuranceBill);
+                //var insuranceRebateNumber = (rate / 100) * insuranceBill;
+
+                var propertyRebate = toMoney.format(propertyTaxesBill);
+                //var propertyRebateNumber = (rate / 100) * propertyTaxesBill;
+
+                //var maintenanceRebates = toMoney.format(maintenanceBill + otherMaintenanceBill);
 
                 //Fill out Amounts to claim 
-                document.getElementById('electricity').innerHTML = electricityRebate.toFixed(2);
-                document.getElementById('maintenance').innerHTML = maintenanceRebates.toFixed(2);
-                document.getElementById('other').innerHTML = otherExpensesRebate.toFixed(2);
-                document.getElementById('insurance').innerHTML = insuranceRebate.toFixed(2);
-                document.getElementById('property').innerHTML = propertyRebate.toFixed(2);
+                $("#electricity").text(electricityRebate);
+                $("#maintenance").text(maintenanceRebate);
+                $("#other").text(otherExpensesRebate);
+                $("#insurance").text(insuranceRebate);
+                $("#property").text(propertyRebate);
+                $("#maintenance-alt").text(otherMaintenanceRebate);
 
                 //Personal-use portion claim
-                personalRate = 100 - rate;
-                personalRebate = ((personalRate / 100) * maintenanceBill) + ((personalRate / 100) * otherExpensesBill) + ((personalRate / 100) * electricityBill) + ((personalRate / 100) * insuranceBill) + ((personalRate / 100) * propertyTaxesBill) + ((personalRate / 100) * otherMaintenanceBill);
-                document.getElementById('office').innerHTML = personalRebate.toFixed(2);
+                var personalRate = 100 - rate;
+                personalRebate = toMoney.format(otherMaintenanceBill + ((maintenanceBill + otherExpensesBill + electricityBill + insuranceBill + propertyTaxesBill) * (personalRate / 100)));
+                personalRebateNumber = otherMaintenanceBill + ((maintenanceBill + otherExpensesBill + electricityBill + insuranceBill + propertyTaxesBill) * (personalRate / 100));
+                //personalRebate = toMoney.format(((personalRate / 100) * maintenanceBill) + ((personalRate / 100) * otherExpensesBill) + ((personalRate / 100) * electricityBill) + ((personalRate / 100) * insuranceBill) + ((personalRate / 100) * propertyTaxesBill) + ((personalRate / 100) * otherMaintenanceBill));
+                //personalRebateNumber = ((personalRate / 100) * maintenanceBill) + ((personalRate / 100) * otherExpensesBill) + ((personalRate / 100) * electricityBill) + ((personalRate / 100) * insuranceBill) + ((personalRate / 100) * propertyTaxesBill) + ((personalRate / 100) * otherMaintenanceBill);
+                $("#office").text(personalRebate);
 
-                //Personal Clain
-                if (!isNaN(personalRebate)) {
-                    $(".personalClaim").text(personalRebate.toFixed(2));
+                //Personal Claim
+                if (personalRebateNumber) {
+                    $(".personalClaim").text(personalRebateNumber.toFixed(2));
                 } else {
                     $(".personalClaim").text("0.00");
                 }
 
                 //Personal Rate
                 if (!isNaN(personalRate)) {
-                    $(".personalRate").text(personalRate.toFixed(2));
+                    $(".personalRate").text(personalRate);
                 } else {
                     $(".personalRate").text("0");
                 }
 
                 //Insurance - Summary Page
-                if (!isNaN(insuranceRebate)) {
-                    $(".ins").text(insuranceRebate.toFixed(2));
+                if (insuranceBill) {
+                    $(".ins").text(insuranceBill.toFixed(2));
                 } else {
                     $(".ins").text("0");
                 }
 
                 //Property Taxes amount - Summary Page
-                if (!isNaN(propertyRebate)) {
-                    $(".pro").text(propertyRebate.toFixed(2));
+                if (propertyTaxesBill) {
+                    $(".pro").text(propertyTaxesBill.toFixed(2));
                 } else {
                     $(".pro").text("0");
                 }
 
                 //Commission Amount - Summary Page
-                if (!isNaN(propertyRebate) || !isNaN(insuranceRebate)) {
-                    var commission = propertyRebate + insuranceRebate
-                    $(".com").text(commission.toFixed(2));
+                if (propertyTaxesBill || insuranceBill) {
+                    var commission = propertyTaxesBill + insuranceBill;
+                    $(".com-total").text(commission.toFixed(2));
                 } else {
-                    $(".pro").text("0");
+                    $(".com-total").text("0");
                 }
 
-                if (document.getElementById("wb-auto-26").checked == true) {
-                    document.getElementById('wb-auto-56').innerHTML = $("#wrkspc").val() + " m²";
-                    document.getElementById('wb-auto-58').innerHTML = $("#hmspc").val() + " m²";
+                if ($(".exp-ft-sq").hasClass("hidden")) {
+                    $("#workSize").text($("#wrkspc").val());
+                    $("#homeSize").text($("#hmspc").val());
                 } else {
-                    document.getElementById('wb-auto-56').innerHTML = $("#wrkspc").val() + " ft²";
-                    document.getElementById('wb-auto-58').innerHTML = $("#hmspc").val() + " ft²";
+                    $("#workSize").text($("#wrkspc").val());
+                    $("#homeSize").text($("#hmspc").val());
                 }
             }
 
             //Common Area Room
-            if (document.getElementById("wb-auto-24").checked == true) {
+            if ($(".dsgntdrm").hasClass("hidden")) {
                 var fromDate = $("#work-home-start").val();
                 var toDate = $("#work-home-end").val();
 
                 //Start Date
                 if (fromDate) {
-                    document.getElementById('startDate').innerHTML = $("#work-home-start").val();
+                    $("#startDate").text(fromDate);
                 }
 
                 //End Date
                 if (toDate) {
-                    document.getElementById('endDate').innerHTML = $("#work-home-end").val();
+                    $("#endDate").text(toDate);
                 }
 
                 var TotalArea = $("#hmspc").val();
 
-                var rate = document.getElementById("wrk").innerText;
+                var rate = $("#workRate").text();
+                rate = parseFloat(rate);
 
                 //Bills
-                var maintenanceBill = $("#mntnc").val();
-                var otherMaintenanceBill = $("#mntnc-excl").val();
-                var otherExpensesBill = $("#othrex").val();
-                var electricityBill = $("#utlts").val();
-                var insuranceBill = $("#insrnc").val();
-                var propertyTaxesBill = $("#prprt").val();
+                var maintenanceBill = toFloat($("#mntnc").val());
+                var otherMaintenanceBill = toFloat($("#mntnc-excl").val());
+                var otherExpensesBill = toFloat($("#othrex").val());
+                var electricityBill = toFloat($("#utlts").val());
+                var insuranceBill = toFloat($("#insrnc").val());
+                var propertyTaxesBill = toFloat($("#prprt").val());
 
                 //Rebates
-                var maintenanceRebate = (rate / 100) * maintenanceBill;
-                var otherExpensesRebate = (rate / 100) * otherExpensesBill;
-                var electricityRebate = (rate / 100) * electricityBill;
-                var insuranceRebate = (rate / 100) * insuranceBill;
-                var propertyRebate = (rate / 100) * propertyTaxesBill;
-                var otherMaintenanceRebate = (rate / 100) * otherMaintenanceBill;
-                var maintenanceRebates = maintenanceRebate + otherMaintenanceRebate;
+                var maintenanceRebate = toMoney.format(maintenanceBill);
+                var otherMaintenanceRebate = toMoney.format(otherMaintenanceBill);
+                var otherExpensesRebate = toMoney.format(otherExpensesBill);
+                var electricityRebate = toMoney.format(electricityBill);
+
+                var insuranceRebate = toMoney.format(insuranceBill);
+                //var insuranceRebateNumber = (rate / 100) * insuranceBill;
+
+                var propertyRebate = toMoney.format(propertyTaxesBill);
+                //var propertyRebateNumber = (rate / 100) * propertyTaxesBill;
+
+                //var maintenanceRebates = toMoney.format(maintenanceBill + otherMaintenanceBill);
 
                 //Fill out Amounts to claim 
-                document.getElementById('electricity').innerHTML = electricityRebate.toFixed(2);
-                document.getElementById('maintenance').innerHTML = maintenanceRebates.toFixed(2);
-                document.getElementById('other').innerHTML = otherExpensesRebate.toFixed(2);
-                document.getElementById('insurance').innerHTML = insuranceRebate.toFixed(2);
-                document.getElementById('property').innerHTML = propertyRebate.toFixed(2);
+                $("#electricity").text(electricityRebate);
+                $("#maintenance").text(maintenanceRebate);
+                $("#other").text(otherExpensesRebate);
+                $("#insurance").text(insuranceRebate);
+                $("#property").text(propertyRebate);
+                $("#maintenance-alt").text(otherMaintenanceRebate);
 
                 //Personal-use portion claim
-                var personalRate = document.getElementById("perRate").innerText;
-                personalRate = parseInt(personalRate);
-                personalRebate = ((personalRate / 100) * maintenanceBill) + ((personalRate / 100) * otherExpensesBill) + ((personalRate / 100) * electricityBill) + ((personalRate / 100) * insuranceBill) + ((personalRate / 100) * propertyTaxesBill) + ((personalRate / 100) * otherMaintenanceBill);
-                document.getElementById('office').innerHTML = personalRebate.toFixed(2);
+                var personalRate = $("#perRate").text();
+                personalRate = parseFloat(personalRate);
+                personalRebate = toMoney.format(otherMaintenanceBill + ((maintenanceBill + otherExpensesBill + electricityBill + insuranceBill + propertyTaxesBill) * (personalRate / 100)));
+                personalRebateNumber = otherMaintenanceBill + ((maintenanceBill + otherExpensesBill + electricityBill + insuranceBill + propertyTaxesBill) * (personalRate / 100));
+                $("#office").text(personalRebate);
 
-                //Personal Clain
-                if (!isNaN(personalRebate)) {
-                    $(".personalClaim").text(personalRebate.toFixed(2));
+                //Personal Claim
+                if (personalRebateNumber) {
+                    $(".personalClaim").text(personalRebateNumber.toFixed(2));
                 } else {
                     $(".personalClaim").text("0.00");
                 }
 
                 //Personal Rate
                 if (!isNaN(personalRate)) {
-                    $(".personalRate").text(personalRate.toFixed(2));
+                    $(".personalRate").text(personalRate);
                 } else {
                     $(".personalRate").text("0");
                 }
 
                 //Insurance - Summary Page
-                if (!isNaN(insuranceRebate)) {
-                    $(".ins").text(insuranceRebate.toFixed(2));
+                if (insuranceBill) {
+                    $(".ins").text(insuranceBill.toFixed(2));
                 } else {
                     $(".ins").text("0");
                 }
 
                 //Property Taxes amount - Summary Page
-                if (!isNaN(propertyRebate)) {
-                    $(".pro").text(propertyRebate.toFixed(2));
+                if (propertyTaxesBill) {
+                    $(".pro").text(propertyTaxesBill.toFixed(2));
                 } else {
                     $(".pro").text("0");
                 }
 
                 //Commission Amount - Summary Page
-                if (!isNaN(propertyRebate) || !isNaN(insuranceRebate)) {
-                    var commission = propertyRebate + insuranceRebate
-                    $(".com").text(commission.toFixed(2));
+                if (propertyTaxesBill || insuranceBill) {
+                    var commission = propertyTaxesBill + insuranceBill;
+                    $(".com-total").text(commission.toFixed(2));
                 } else {
-                    $(".pro").text("0");
+                    $(".com-total").text("0");
                 }
 
-                if (document.getElementById("wb-auto-29").checked == true) {
-                    document.getElementById('wb-auto-56').innerHTML = $("#wrkspc-cmmn").val() + " m²";
-                    document.getElementById('wb-auto-57').innerHTML = $("#cmmnrm-hrs").val();
-                    document.getElementById('wb-auto-58').innerHTML = $("#hmspc").val() + " m²";
+                if ($(".exp-ft-sq").hasClass("hidden")) {
+                    $("#workSize").text($("#wrkspc-cmmn").val());
+                    $("#hoursWorked").text($("#cmmnrm-hrs").val());
+                    $("#homeSize").text($("#hmspc").val());
                 } else {
-                    document.getElementById('wb-auto-56').innerHTML = $("#wrkspc-cmmn").val() + " ft²";
-                    document.getElementById('wb-auto-57').innerHTML = $("#cmmnrm-hrs").val();
-                    document.getElementById('wb-auto-58').innerHTML = $("#hmspc").val() + " ft²";
+                    $("#workSize").text($("#wrkspc-cmmn").val());
+                    $("#hoursWorked").text($("#cmmnrm-hrs").val());
+                    $("#homeSize").text($("#hmspc").val());
                 }
             }
-            //edit
-
         });
+
+        /**
+         * toFloat
+         * 
+         * convert a formatted number to a JS compliant float
+         * 
+         * param {String} the formatted number
+         * 
+         * return {Float} the JS compliant float equiv
+         */
+        function toFloat(number) {
+            var reformattedNumber = 0;
+            if (number.match(FRENCH_CURRENCY_FORMAT)) {
+                reformattedNumber = number.replace(/\s/g, "");
+                reformattedNumber = reformattedNumber.replace(/\,/g, ".");
+                return parseFloat(reformattedNumber);
+            } else if (number.match(ENGLISH_CURRENCY_FORMAT)) {
+                reformattedNumber = number.replace(/\,/g, "");
+            }
+            return parseFloat(reformattedNumber);
+        }
     </script>
 </body>
 
